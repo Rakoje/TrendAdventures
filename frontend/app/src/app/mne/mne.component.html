@@ -1,0 +1,827 @@
+<!-- Navbar -->
+<header class="header text-center">
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navigation-nav">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-brand" *ngIf="innerWidth < 1000"><img src="assets/images/logo.png" alt=""
+                        style="height: 200%; padding-bottom: 1rem;"></div>
+                <div class="navbar-brand" *ngIf="innerWidth >= 1000"><img src="assets/images/logo.png" alt=""
+                        style="height: 100%; position: absolute; top: 0; left: 10%"></div>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navigation-nav">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a class="section-scroll" href="#canyoning-title">Kanjoning</a></li>
+                    <li><a href="#nevidio-title">Nevidio</a></li>
+                    <li><a href="#krapina-title">Drenoštica</a></li>
+                    <li><a href="#medjurijec-title">Međuriječ</a></li>
+                    <li><a href="#skurda-title">Škurda</a></li>
+                    <li><a href="#team-title">Tim</a></li>
+                    <li><a href="#booking-title">Rezervacija</a></li>
+                    <li>
+                        <img (click)="eng();" src="assets/images/united-kingdom.png" class="lang-img"
+                            style="margin: 1rem">
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+    </nav>
+</header>
+<!-- End Navbar -->
+<main id="main-text-home" class="container">
+    <!--<div class="title-section big-title-sec " data-animation="fadeInUp" data-delay="0">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <h2 class="big-title">Some information about us</h2>
+            <h1 class="big-subtitle">We’re small branding &amp; digital studio</h1>
+            <hr>
+            <p class="about-text">Cras porta dolor ut velit imperdiet, quis sodales tellus facilisis. Vestibulum magna turpis, tincidun blandit semper lorem. Mauris nodesterin feugiat neque, a aliquet ligula. Sed non felis tincidunt, facilisis felis vitae, mollis est. Nulla sapien dui, feugiat sed velit a, egestas porta magna.</p>
+          </div>
+        </div> 
+    </div> <!-- end title-section -->
+    <!-- Screenshots
+    ================================================== -->
+
+    <div class="row  mt-5r" data-animation="fadeInUp" data-delay="0">
+        <div class="col-sm-12 text-center">
+            <div class="title-section" id="canyoning-title" style="padding-bottom: 40px;">
+                <h1>Kanjoning</h1>
+                <hr>
+            </div>
+            Kanjoning je uzbudljiva i avanturistička aktivnost koja uključuje istraživanje kanjona planinarenjem,
+            spuštanjem, plivanjem, a ponekad čak i skakanjem. To je uzbudljivo iskustvo koje vas može odvesti do nekih
+            od najnevjerovatnijih prirodnih čuda na svijetu, ali nije bez rizika.
+            Zato je važno da uvijek imate iskusne vodiče na svojim kanjoning turama. Vodiči kanjoninga su obučeni
+            profesionalci koji imaju opsežno znanje o kanjonima, lokalnom okruženju i neophodnim bezbjedonosnim
+            tehnikama. Oni znaju kako da se kreću terenom, identifikuju potencijalne opasnosti i reaguju u hitnim
+            slučajevima, ako do njih dođe. <br><br>
+            Ako imate iskusnog vodiča pored sebe, to može učiniti svu razliku u osiguravanju da vaša avantura kanjoninga
+            bude i sigurna i ugodna. Oni mogu da vam obezbede neophodnu opremu, da vas nauče pravilnim tehnikama
+            spuštanja i plivanja i da vas vode kroz krivine kanjona.
+            Štaviše, vodiči kanjoninga takođe mogu da podijele svoje znanje o lokalnoj flori i fauni, geologiji i
+            istoriji ovog područja, obogaćujući vaše iskustvo i produbljujući vašu vezu sa svijetom prirode. <br><br>
+            Dakle, ako planirate avanturu kanjoninga, obavezno izaberite renomiranu kompaniju sa iskusnim vodičima. Ne
+            rizikujte sa svojom bezbjednošću i uvek dajte prioritet važnosti da imate obučene profesionalce pored sebe.
+            Uz njihovu pomoć, moći ćete da doživite nezaboravno iskustvo kanjoninga koje je uzbudljivo i bezbedno.
+
+        </div>
+    </div>
+    <section>
+        <div id="screenshots-section" class="mt-5r">
+            <div class="text-center">
+                <div class="title-section text-center " data-animation="fadeInUp" data-delay="0">
+                    <div class="row">
+                        <div class="col-sm-12" id="nevidio-title">
+                            <h2>Nevidio</h2>
+                            <div class="row">
+                                <div class="img-below-text col-sm-4">
+                                    <img src="assets/images/icons/time.png" alt="sometext" />
+                                    <p>4h</p>
+                                </div>
+                                <div class="img-below-text col-sm-4">
+                                    <img src="assets/images/icons/group.png" alt="sometext" />
+                                    <p>3+</p>
+                                </div>
+                                <div class="img-below-text col-sm-4">
+                                    <img src="assets/images/icons/price.png" alt="sometext" />
+                                    <p>90€ (100€ sa ručkom)</p>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                    </div> <!-- End row -->
+                </div> <!-- end title-section -->
+                <div class="row " data-animation="fadeInUp" data-delay="0">
+                    <div class="col-sm-12" style="padding-bottom: 20px">
+                        Dobrodošli u kanjon Nevidio, skriveni dragulj Crne Gore koji čeka da bude istražen! Ušuškan u
+                        srcu Nacionalnog parka Durmitor, ovaj krševiti kanjon je destinacija koju morate posjetiti, kako
+                        ljubitelji avanture, tako i za ljubitelji prirode.
+                        Kanjon Nevidio je jedan od poslednjih neistraženih kanjona u Evropi, nedodirnut od strane ljudi.
+                        To je čudo prirode koje oduzima dah i koje se sastoji od strmih litica, kaskadnih vodopada,
+                        kristalno čistih bazena i uskih klisura koje samo čekaju da budu pređene. <br><br>
+                        Jedan od najboljih načina da doživite Nevidio je odlazak na kanjoning turu. Ova uzbudljiva
+                        aktivnost uključuje planinarenje, plivanje, spuštanje i penjanje kroz kanjon, pod vodstvom
+                        iskusnih profesionalaca koji će vam u svakom trenutku osigurati sigurnost.
+                        Na vašoj kanjoning turi, moći ćete da istražite skrivene čari kanjona Nevidio, otkrivajući
+                        njegova mnoga prirodna čuda na putu. Moći ćete da plivate u smaragdnim bazenima, klizite niz
+                        prirodne vodene tobogane, skačete sa litica u duboke vodene bazene i spuštate se niz strmine -
+                        sve dok ste okruženi zadivljujućom ljepotom kanjona. <br><br>
+                        Za odlazak na kanjoning turu u kanjonu Nevidio nije potrebno prethodno iskustvo, ali treba da
+                        ste u dobroj fizičkoj formi i da vam je udobno u vodi. Obilasci su pogodni za sve uzraste od 8 i
+                        više godina, a obezbeđena je sva neophodna oprema.
+                        Ako tražite nezaboravnu avanturu u Crnoj Gori, obavezno uvrsite kanjoning turu kanjonom Nevidio
+                        u svoj plan. To je iskustvo koje nećete zaboraviti!
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="screenshots-carousel " data-animation="fadeInUp" data-delay="0">
+
+                            <div class="shot">
+                                <div class="screen">
+                                    <a class="zoom" href="assets/images/screenshots/nevidio-1.jpg"><img
+                                            src="assets/images/screenshots/1-nevidio-1.jpg" alt="screenshot"></a>
+                                </div> <!-- end screen -->
+                            </div> <!-- end shot -->
+
+                            <div class="shot">
+                                <div class="screen">
+                                    <a class="zoom" href="assets/images/screenshots/nevidio-2.jpg"><img
+                                            src="assets/images/screenshots/1-nevidio-2.jpg" alt="screenshot"></a>
+                                </div> <!-- end screen -->
+                            </div> <!-- end shot -->
+
+                            <div class="shot">
+                                <div class="screen">
+                                    <a class="zoom" href="assets/images/screenshots/nevidio-3.jpg"><img
+                                            src="assets/images/screenshots/1-nevidio-3.jpg" alt="screenshot"></a>
+                                </div> <!-- end screen -->
+                            </div> <!-- end shot -->
+
+                            <div class="shot">
+                                <div class="screen">
+                                    <a class="zoom" href="assets/images/screenshots/nevidio-4.jpg"><img
+                                            src="assets/images/screenshots/1-nevidio-4.jpg" alt="screenshot"></a>
+                                </div> <!-- end screen -->
+                            </div> <!-- end shot -->
+
+
+                            <div class="shot">
+                                <div class="screen">
+                                    <a class="zoom" href="assets/images/screenshots/nevidio-5.jpg"><img
+                                            src="assets/images/screenshots/1-nevidio-5.jpg" alt="screenshot"></a>
+                                </div> <!-- end screen -->
+                            </div> <!-- end shot -->
+
+                            <div class="shot">
+                                <div class="screen">
+                                    <a class="zoom" href="assets/images/screenshots/nevidio-6.jpg"><img
+                                            src="assets/images/screenshots/1-nevidio-6.jpg" alt="screenshot"></a>
+                                </div> <!-- end screen -->
+                            </div> <!-- end shot -->
+
+                            <div class="shot">
+                                <div class="screen">
+                                    <a class="zoom" href="assets/images/screenshots/nevidio-7.jpg"><img
+                                            src="assets/images/screenshots/1-nevidio-7.jpg" alt="screenshot"></a>
+                                </div> <!-- end screen -->
+                            </div> <!-- end shot -->
+
+                            <div class="shot">
+                                <div class="screen">
+                                    <a class="zoom" href="assets/images/screenshots/nevidio-8.jpg"><img
+                                            src="assets/images/screenshots/1-nevidio-8.jpg" alt="screenshot"></a>
+                                </div> <!-- end screen -->
+                            </div> <!-- end shot -->
+
+                            <div class="shot">
+                                <div class="screen">
+                                    <a class="zoom" href="assets/images/screenshots/nevidio-9.jpg"><img
+                                            src="assets/images/screenshots/1-nevidio-9.jpg" alt="screenshot"></a>
+                                </div> <!-- end screen -->
+                            </div> <!-- end shot -->
+
+                            <div class="shot">
+                                <div class="screen">
+                                    <a class="zoom" href="assets/images/screenshots/nevidio-10.jpg"><img
+                                            src="assets/images/screenshots/1-nevidio-10.jpg" alt="screenshot"></a>
+                                </div> <!-- end screen -->
+                            </div> <!-- end shot -->
+
+                            <div class="shot">
+                                <div class="screen">
+                                    <a class="zoom" href="assets/images/screenshots/nevidio-11.jpg"><img
+                                            src="assets/images/screenshots/1-nevidio-11.jpg" alt="screenshot"></a>
+                                </div> <!-- end screen -->
+                            </div> <!-- end shot -->
+
+                            <div class="shot">
+                                <div class="screen">
+                                    <a class="zoom" href="assets/images/screenshots/nevidio-12.jpg"><img
+                                            src="assets/images/screenshots/1-nevidio-12.jpg" alt="screenshot"></a>
+                                </div> <!-- end screen -->
+                            </div> <!-- end shot -->
+
+
+                            <div class="shot">
+                                <div class="screen">
+                                    <a class="zoom" href="assets/images/screenshots/nevidio-13.jpg"><img
+                                            src="assets/images/screenshots/1-nevidio-13.jpg" alt="screenshot"></a>
+                                </div> <!-- end screen -->
+                            </div> <!-- end shot -->
+
+                            <div class="shot">
+                                <div class="screen">
+                                    <a class="zoom" href="assets/images/screenshots/nevidio-14.jpg"><img
+                                            src="assets/images/screenshots/1-nevidio-14.jpg" alt="screenshot"></a>
+                                </div> <!-- end screen -->
+                            </div> <!-- end shot -->
+
+                            <div class="shot">
+                                <div class="screen">
+                                    <a class="zoom" href="assets/images/screenshots/nevidio-15.jpg"><img
+                                            src="assets/images/screenshots/1-nevidio-15.jpg" alt="screenshot"></a>
+                                </div> <!-- end screen -->
+                            </div> <!-- end shot -->
+
+                            <div class="shot">
+                                <div class="screen">
+                                    <a class="zoom" href="assets/images/screenshots/nevidio-16.jpg"><img
+                                            src="assets/images/screenshots/1-nevidio-16.jpg" alt="screenshot"></a>
+                                </div> <!-- end screen -->
+                            </div> <!-- end shot -->
+
+                        </div> <!-- end screenshots-carousel -->
+                    </div> <!-- end col-md-12 -->
+                </div> <!-- end row -->
+                <div class="text-center mt-5r">
+                    <div class="title-section text-center " data-animation="fadeInUp" data-delay="0">
+                        <div class="row " data-animation="fadeInUp" data-delay="0">
+                            <div class="col-sm-12" id="krapina-title">
+                                <h2>Drenoštica</h2>
+                                <div class="row">
+                                    <div class="img-below-text col-sm-4">
+                                        <img src="assets/images/icons/time.png" alt="sometext" />
+                                        <p>2h</p>
+                                    </div>
+                                    <div class="img-below-text col-sm-4">
+                                        <img src="assets/images/icons/group.png" alt="sometext" />
+                                        <p>3+</p>
+                                    </div>
+                                    <div class="img-below-text col-sm-4">
+                                        <img src="assets/images/icons/price.png" alt="sometext" />
+                                        <p>80€ (90€ sa ručkom)</p>
+                                    </div>
+                                </div>
+
+                                <hr>
+                            </div>
+                        </div> <!-- End row -->
+                    </div> <!-- end title-section -->
+                    <div class="row">
+                        <div class="col-sm-12" style="padding-bottom: 20px">
+                            Krapina se nalazi na samo nekoliko minuta vožnje od Budve. Selo je okruženo valovitim
+                            brežuljcima, maslinama i vinogradima, i savršeno je mjesto za opuštanje i bjekstvo od gužve.
+                            Jedna od atrakcija Krapine koju morate posjetiti je kanjon Drenoštice, popularna destinacija
+                            za ljubitelje kanjoninga, koja nudi uzbudljivu priliku za istraživanje krševitog terena Crne
+                            Gore. <br><br>
+                            Vaša kanjoning tura će vas odvesti kroz lavirint uskih prolaza, strmih litica i
+                            stjenovitih terena, i sve dok ste okruženi prirodnim pejzažima koji oduzimaju dah.
+                            Dok budete prolazili kroz kanjon Drenoštice, imaćete priliku da se spuštate niz vodopade,
+                            plivate u osvježavajućim bazenima i skačete u duboku vodu. Ova uzbudljiva avantura je
+                            nezaobilazna za sve koji traže adrenalin i kao takva predstavlja nezaboravno iskustvo u
+                            Crnoj Gori. <br><br>
+                            Nakon avanture kanjoninga, možete se opustiti i opustiti u šarmantnom selu Krapina, gdje
+                            ćete pronaći tradicionalno crnogorsko gostoprimstvo i ukusnu domaću kuhinju. Obavezno
+                            probajte neke od domaćih specijaliteta, kao što su svježe ulovljena riba, meso sa roštilja
+                            i domaća rakija. <br><br>
+                            Bilo da ste u potrazi za uzbuđenjima ili ljubitelji prirode, kanjon Drenoštice i selo
+                            Krapina imaju za svakog ponešto. Dođite i istražite ovaj skriveni dragulj u Crnoj Gori i
+                            stvorite uspomene koje će trajati doživotno!
+
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="screenshots-carousel " data-animation="fadeInUp" data-delay="0">
+
+                                <div class="shot">
+                                    <div class="screen">
+                                        <a class="zoom" href="assets/images/screenshots/krapina-1.jpg"><img
+                                                src="assets/images/screenshots/1-krapina-1.jpg" alt="screenshot"></a>
+                                    </div> <!-- end screen -->
+                                </div> <!-- end shot -->
+
+                                <div class="shot">
+                                    <div class="screen">
+                                        <a class="zoom" href="assets/images/screenshots/krapina-9.jpg"><img
+                                                src="assets/images/screenshots/1-krapina-9.jpg" alt="screenshot"></a>
+                                    </div> <!-- end screen -->
+                                </div> <!-- end shot -->
+
+                                <div class="shot">
+                                    <div class="screen">
+                                        <a class="zoom" href="assets/images/screenshots/krapina-2.jpg"><img
+                                                src="assets/images/screenshots/1-krapina-2.jpg" alt="screenshot"></a>
+                                    </div> <!-- end screen -->
+                                </div> <!-- end shot -->
+
+                                <div class="shot">
+                                    <div class="screen">
+                                        <a class="zoom" href="assets/images/screenshots/krapina-10.jpg"><img
+                                                src="assets/images/screenshots/1-krapina-10.jpg" alt="screenshot"></a>
+                                    </div> <!-- end screen -->
+                                </div> <!-- end shot -->
+
+
+                                <div class="shot">
+                                    <div class="screen">
+                                        <a class="zoom" href="assets/images/screenshots/krapina-3.jpg"><img
+                                                src="assets/images/screenshots/1-krapina-3.jpg" alt="screenshot"></a>
+                                    </div> <!-- end screen -->
+                                </div> <!-- end shot -->
+
+                                <div class="shot">
+                                    <div class="screen">
+                                        <a class="zoom" href="assets/images/screenshots/krapina-11.jpg"><img
+                                                src="assets/images/screenshots/1-krapina-11.jpg" alt="screenshot"></a>
+                                    </div> <!-- end screen -->
+                                </div> <!-- end shot -->
+
+                                <div class="shot">
+                                    <div class="screen">
+                                        <a class="zoom" href="assets/images/screenshots/krapina-4.jpg"><img
+                                                src="assets/images/screenshots/1-krapina-4.jpg" alt="screenshot"></a>
+                                    </div> <!-- end screen -->
+                                </div> <!-- end shot -->
+
+                                <div class="shot">
+                                    <div class="screen">
+                                        <a class="zoom" href="assets/images/screenshots/krapina-12.jpg"><img
+                                                src="assets/images/screenshots/1-krapina-12.jpg" alt="screenshot"></a>
+                                    </div> <!-- end screen -->
+                                </div> <!-- end shot -->
+
+                                <div class="shot">
+                                    <div class="screen">
+                                        <a class="zoom" href="assets/images/screenshots/krapina-5.jpg"><img
+                                                src="assets/images/screenshots/1-krapina-5.jpg" alt="screenshot"></a>
+                                    </div> <!-- end screen -->
+                                </div> <!-- end shot -->
+
+                                <div class="shot">
+                                    <div class="screen">
+                                        <a class="zoom" href="assets/images/screenshots/krapina-13.jpg"><img
+                                                src="assets/images/screenshots/1-krapina-13.jpg" alt="screenshot"></a>
+                                    </div> <!-- end screen -->
+                                </div> <!-- end shot -->
+
+                                <div class="shot">
+                                    <div class="screen">
+                                        <a class="zoom" href="assets/images/screenshots/krapina-6.jpg"><img
+                                                src="assets/images/screenshots/1-krapina-6.jpg" alt="screenshot"></a>
+                                    </div> <!-- end screen -->
+                                </div> <!-- end shot -->
+
+                                <div class="shot">
+                                    <div class="screen">
+                                        <a class="zoom" href="assets/images/screenshots/krapina-14.jpg"><img
+                                                src="assets/images/screenshots/1-krapina-14.jpg" alt="screenshot"></a>
+                                    </div> <!-- end screen -->
+                                </div> <!-- end shot -->
+
+
+                                <div class="shot">
+                                    <div class="screen">
+                                        <a class="zoom" href="assets/images/screenshots/krapina-7.jpg"><img
+                                                src="assets/images/screenshots/1-krapina-7.jpg" alt="screenshot"></a>
+                                    </div> <!-- end screen -->
+                                </div> <!-- end shot -->
+
+                                <div class="shot">
+                                    <div class="screen">
+                                        <a class="zoom" href="assets/images/screenshots/krapina-15.jpg"><img
+                                                src="assets/images/screenshots/1-krapina-15.jpg" alt="screenshot"></a>
+                                    </div> <!-- end screen -->
+                                </div> <!-- end shot -->
+
+                                <div class="shot">
+                                    <div class="screen">
+                                        <a class="zoom" href="assets/images/screenshots/krapina-8.jpg"><img
+                                                src="assets/images/screenshots/1-krapina-8.jpg" alt="screenshot"></a>
+                                    </div> <!-- end screen -->
+                                </div> <!-- end shot -->
+
+                            </div> <!-- end screenshots-carousel -->
+                        </div> <!-- end col-md-12 -->
+                    </div> <!-- end row -->
+                    <div class="text-center mt-5r">
+                        <div class="title-section text-center " data-animation="fadeInUp" data-delay="0">
+                            <div class="row " data-animation="fadeInUp" data-delay="0">
+                                <div class="col-sm-12" id="medjurijec-title">
+                                    <h2>Međuriječ</h2>
+                                    <div class="row">
+                                        <div class="img-below-text col-sm-4">
+                                            <img src="assets/images/icons/time.png" alt="sometext" />
+                                            <p>4h</p>
+                                        </div>
+                                        <div class="img-below-text col-sm-4">
+                                            <img src="assets/images/icons/group.png" alt="sometext" />
+                                            <p>4+</p>
+                                        </div>
+                                        <div class="img-below-text col-sm-4">
+                                            <img src="assets/images/icons/price.png" alt="sometext" />
+                                            <p>100€</p>
+                                        </div>
+                                    </div>
+
+                                    <hr>
+                                </div>
+                            </div> <!-- End row -->
+                        </div> <!-- end title-section -->
+                        <div class="row">
+                            <div class="col-sm-12" style="padding-bottom: 20px">
+                                U krševitim planinama Crne Gore nalazi se jedna od najbolje čuvanih tajni zemlje -
+                                kanjon Međuriječ. Ovaj skriveni dragulj je destinacija koju morate posjetiti, za svakoga
+                                ko traži avanturističko iskustvo van putanje. <br><br>
+                                Kanjoning u kanjonu Međurijeca pravi je adrenalin. Sa svojim strmim liticama, brzim
+                                vodopadima i uskim klisurama, ovaj kanjon je igralište za one koji traže uzbuđenje. Dok
+                                se krećete kroz kanjon, spuštaćete se niz kaskadne vodopade, skakaćete u duboke
+                                bazene i kretati se kroz krivine kanjona.
+                                Ali kanjoning u kanjonu Međurijec nije samo uzbuđenje – to je i prilika da se povežete
+                                sa prirodom na dubok način. Okruženi netaknutom divljinom bićete uronjeni u prirodne
+                                ljepote Crne Gore na svakom koraku. Od kristalno čistih voda kanjona do bujnih šuma koje
+                                ga okružuju, kanjon Međuriječ je mjesto od kojeg zastaje dah. <br><br>
+                                A uz stručne vodiče koji će vas voditi, moći ćete da istražujete kanjon bezbjedno i
+                                pouzdano. Bilo da ste iskusan profesionalac u kanjoningu ili avanturista prvi put,
+                                vodiči će vam pružiti znanje i opremu koja vam je potrebna za nezaboravno iskustvo.
+                                Ali nemojte nas samo vjerovati na riječ – dođite i uvjerite se zašto je kanjon Međuriječ
+                                jedno od skrivenih blaga Crne Gore. Rezervišite svoju avanturu već danas i doživite
+                                uzbuđenje istraživanja jednog od najneverovatnijih prirodnih čuda u zemlji.
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="screenshots-carousel " data-animation="fadeInUp" data-delay="0">
+
+                                    <div class="shot">
+                                        <div class="screen">
+                                            <a class="zoom" href="assets/images/screenshots/medjurecje-1.jpg"><img
+                                                    src="assets/images/screenshots/1-medjurecje-1.jpg"
+                                                    alt="screenshot"></a>
+                                        </div> <!-- end screen -->
+                                    </div> <!-- end shot -->
+
+                                    <div class="shot">
+                                        <div class="screen">
+                                            <a class="zoom" href="assets/images/screenshots/medjurecje-9.jpg"><img
+                                                    src="assets/images/screenshots/1-medjurecje-9.jpg"
+                                                    alt="screenshot"></a>
+                                        </div> <!-- end screen -->
+                                    </div> <!-- end shot -->
+
+                                    <div class="shot">
+                                        <div class="screen">
+                                            <a class="zoom" href="assets/images/screenshots/medjurecje-2.jpg"><img
+                                                    src="assets/images/screenshots/1-medjurecje-2.jpg"
+                                                    alt="screenshot"></a>
+                                        </div> <!-- end screen -->
+                                    </div> <!-- end shot -->
+
+                                    <div class="shot">
+                                        <div class="screen">
+                                            <a class="zoom" href="assets/images/screenshots/medjurecje-10.jpg"><img
+                                                    src="assets/images/screenshots/1-medjurecje-10.jpg"
+                                                    alt="screenshot"></a>
+                                        </div> <!-- end screen -->
+                                    </div> <!-- end shot -->
+
+
+                                    <div class="shot">
+                                        <div class="screen">
+                                            <a class="zoom" href="assets/images/screenshots/medjurecje-3.jpg"><img
+                                                    src="assets/images/screenshots/1-medjurecje-3.jpg"
+                                                    alt="screenshot"></a>
+                                        </div> <!-- end screen -->
+                                    </div> <!-- end shot -->
+
+                                    <div class="shot">
+                                        <div class="screen">
+                                            <a class="zoom" href="assets/images/screenshots/medjurecje-11.jpg"><img
+                                                    src="assets/images/screenshots/1-medjurecje-11.jpg"
+                                                    alt="screenshot"></a>
+                                        </div> <!-- end screen -->
+                                    </div> <!-- end shot -->
+
+                                    <div class="shot">
+                                        <div class="screen">
+                                            <a class="zoom" href="assets/images/screenshots/medjurecje-4.jpg"><img
+                                                    src="assets/images/screenshots/1-medjurecje-4.jpg"
+                                                    alt="screenshot"></a>
+                                        </div> <!-- end screen -->
+                                    </div> <!-- end shot -->
+
+                                    <div class="shot">
+                                        <div class="screen">
+                                            <a class="zoom" href="assets/images/screenshots/medjurecje-12.jpg"><img
+                                                    src="assets/images/screenshots/1-medjurecje-12.jpg"
+                                                    alt="screenshot"></a>
+                                        </div> <!-- end screen -->
+                                    </div> <!-- end shot -->
+
+                                    <div class="shot">
+                                        <div class="screen">
+                                            <a class="zoom" href="assets/images/screenshots/medjurecje-5.jpg"><img
+                                                    src="assets/images/screenshots/1-medjurecje-5.jpg"
+                                                    alt="screenshot"></a>
+                                        </div> <!-- end screen -->
+                                    </div> <!-- end shot -->
+
+                                    <div class="shot">
+                                        <div class="screen">
+                                            <a class="zoom" href="assets/images/screenshots/medjurecje-13.jpg"><img
+                                                    src="assets/images/screenshots/1-medjurecje-13.jpg"
+                                                    alt="screenshot"></a>
+                                        </div> <!-- end screen -->
+                                    </div> <!-- end shot -->
+
+                                    <div class="shot">
+                                        <div class="screen">
+                                            <a class="zoom" href="assets/images/screenshots/medjurecje-6.jpg"><img
+                                                    src="assets/images/screenshots/1-medjurecje-6.jpg"
+                                                    alt="screenshot"></a>
+                                        </div> <!-- end screen -->
+                                    </div> <!-- end shot -->
+
+                                    <div class="shot">
+                                        <div class="screen">
+                                            <a class="zoom" href="assets/images/screenshots/medjurecje-14.jpg"><img
+                                                    src="assets/images/screenshots/1-medjurecje-14.jpg"
+                                                    alt="screenshot"></a>
+                                        </div> <!-- end screen -->
+                                    </div> <!-- end shot -->
+
+
+                                    <div class="shot">
+                                        <div class="screen">
+                                            <a class="zoom" href="assets/images/screenshots/medjurecje-7.jpg"><img
+                                                    src="assets/images/screenshots/1-medjurecje-7.jpg"
+                                                    alt="screenshot"></a>
+                                        </div> <!-- end screen -->
+                                    </div> <!-- end shot -->
+
+                                    <div class="shot">
+                                        <div class="screen">
+                                            <a class="zoom" href="assets/images/screenshots/medjurecje-15.jpg"><img
+                                                    src="assets/images/screenshots/1-medjurecje-15.jpg"
+                                                    alt="screenshot"></a>
+                                        </div> <!-- end screen -->
+                                    </div> <!-- end shot -->
+
+                                    <div class="shot">
+                                        <div class="screen">
+                                            <a class="zoom" href="assets/images/screenshots/medjurecje-8.jpg"><img
+                                                    src="assets/images/screenshots/1-medjurecje-8.jpg"
+                                                    alt="screenshot"></a>
+                                        </div> <!-- end screen -->
+                                    </div> <!-- end shot -->
+
+                                </div> <!-- end screenshots-carousel -->
+                            </div> <!-- end col-md-12 -->
+                        </div> <!-- end row -->
+                        <div class="text-center mt-5r">
+                            <div class="title-section text-center " data-animation="fadeInUp"
+                                data-delay="0">
+                                <div class="row">
+                                    <div class="col-sm-12" id="skurda-title">
+                                        <h2>Škurda</h2>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="img-below-text col-sm-4">
+                                                <img src="assets/images/icons/time.png" alt="sometext" />
+                                                <p>4h</p>
+                                            </div>
+                                            <div class="img-below-text col-sm-4">
+                                                <img src="assets/images/icons/group.png" alt="sometext" />
+                                                <p>4+</p>
+                                            </div>
+                                            <div class="img-below-text col-sm-4">
+                                                <img src="assets/images/icons/price.png" alt="sometext" />
+                                                <p>80€</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div> <!-- End row -->
+                            </div> <!-- end title-section -->
+                            <div class="row " data-animation="fadeInUp" data-delay="0">
+                                <div class="col-sm-12" style="padding-bottom: 20px">
+                                    Otkrijte prirodna čuda Crne Gore istražujući kanjon Škurde koji oduzima dah u
+                                    Kotoru. Smješteno u starom gradu, ovo zapanjujuće čudo prirode je destinacija koju
+                                    morate posjetiti.
+                                    Sa svojim kristalno čistim vodama, dramatičnim liticama i bujnom vegetacijom, kanjon
+                                    Skurda je pravo čudo majke prirode. <br><br>
+                                    Ova klisura koja oduzima dah nudi uzbudljivo
+                                    iskustvo kanjoninga koje će testirati vaše granice i ostaviti vam uspomene koje će
+                                    trajati cio život. Ova izazovna aktivnost uključuje navigaciju kroz neravni teren
+                                    kanjona, uključujući spuštanje niz vodopade, skakanje u duboke bazene i penjanje
+                                    preko kamenih gromada. Ali za one koji su spremni za izazov, nagrade su vredne toga.
+                                    Dok budete prolazili kroz kanjon, bićete počašćeni nekim od najlepših pogleda u
+                                    celoj Crnoj Gori. Visoke litice, kristalno čisti bazeni i bujna vegetacija okružuju
+                                    vas na svakom koraku, stvarajući onostranu atmosferu koja je istovremeno uzbudljiva
+                                    i izaziva strahopoštovanje. <br><br>
+                                    Ali kanjoning u kanjonu Škurda nije samo pejzaž. To je takođe prilika da testirate
+                                    svoje vještine i gurnete sebe do novih granica. Sa stručnim vodičima koji će vas
+                                    voditi, moći ćete da savladate izazove za koje nikada niste mislili da su mogući
+                                    i doživećete osećaj postignuća koji malo koja druga aktivnost može da pruži.
+                                    Bilo da ste iskusan profesionalac u kanjoningu ili avanturista prvi put, kanjon
+                                    Škurda je destinacija koju ne treba propustiti. Pa zašto ne rezervišite svoje
+                                    putovanje danas i doživite uzbuđenje kanjoninga u jednom od najlepših prirodnih čuda
+                                    Crne Gore?
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center mt-5r">
+                            <div class="title-section text-center " data-animation="fadeInUp"
+                                data-delay="0">
+                                <div class="row">
+                                    <div class="col-sm-12" id="team-title">
+                                        <h2>Tim</h2>
+                                        <hr>
+                                    </div>
+                                </div> <!-- End row -->
+                            </div> <!-- end title-section -->
+                            <div class="row " data-animation="fadeInUp" data-delay="0">
+                                <div class="col-sm-12" id="team-title" style="padding-bottom: 20px">
+                                    Kada je u pitanju istraživanje prirodnih ljepota crnogorskih kanjona, želite vodiče
+                                    koji su ne samo iskusni i obrazovani, već i strastveni prema prirodi. Zato su naši
+                                    vodiči savršeno prikladni za vašu avanturu kanjoninga. <br><br>
+                                    Naši vodiči su svi entuzijasti prirode sa dugom istorijom vođenja kanjona. Oni
+                                    razumiju jedinstvenu geologiju i ekologiju svakog kanjona i mogu da ukažu na floru i
+                                    faunu koji svaku lokaciju čine posebnom. Njihova ljubav prema prirodi je zarazna i
+                                    ponosni su što svoja znanja i iskustva dele sa drugima.
+                                    Ali stručnost naših vodiča se ne zaustavlja na kanjoningu. Oni su takođe dio NVO GSS
+                                    (Gorska služba spašavanja), što znači da su obučeni u tehnikama hitnog spasavanja i
+                                    prve pomoći. Pored toga, penjači su u PSD Javorak iz Nikšića, tako da imaju veliko
+                                    iskustvo u planinarenju i radu sa užetom. <br><br>
+                                    Ne samo da su naši vodiči obrazovani i vješti, već su i ljubazni i otvoreni. Vole
+                                    da upoznaju nove ljude i dijele svoju strast prema prirodi. Oni vode računa o tome
+                                    da se svaki član vaše osjeća prijatno u toku ture.
+                                    Kada rezervišete avanturu kanjoninga sa nama, možete vjerovati da ste u dobrim
+                                    rukama sa našim stručnim vodičima. Posvećeni su tome da vaše iskustvo učine
+                                    nezaboravnim, a njihova ljubav prema prirodi sigurno će se odraziti na vas.
+
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <img src="../../assets/images/screenshots/bogdan.png" alt=""
+                                                style="border-radius: 50%; width: 200px; margin: 20px; border: 2px solid white">
+                                        </div>
+                                    </div>
+                                    Upoznajte Bogdana - penjača, vodiča kanjoninga i entuzijastu sa preko sedam godina
+                                    iskustva u industriji. Bogdan je član PSD Javorak u Nikšiću i radi kao vodič za
+                                    kanjoning ture. Takođe je dio spasilačkog tima GSS Crne Gore.
+                                    Bogdanova strast prema prirodi i avanturama dovela ga je do istraživanja nekih od
+                                    najljepših i najizazovnijih pejzaža na svijetu. Popeo se na vrhove kao što su
+                                    Materhorn i Elbrus, a takođe je stekao PADI ronilačke dozvole. <br><br>
+                                    Kao iskusan vodič kanjoninga, Bogdan zna kako da se kreće i po najtežim kanjonima,
+                                    osiguravajući da njegovi klijenti imaju bezbedno i uzbudljivo iskustvo. Posvećen
+                                    je pružanju usluge vrhunskog kvaliteta i uvijek ide iznad i dalje kako bi se
+                                    pobrinuo da se njegovi klijenti dobro provedu. <br><br>
+                                    Ali ono što Bogdana zaista izdvaja je njegova prijateljska i otvorena ličnost. Voli
+                                    da upoznaje nove ljude i sklapa nove prijatelje, a njegov entuzijazam je zarazan.
+                                    Bilo da ste iskusni avanturista ili prvi put u kanjoningu, Bogdanovo prijateljsko
+                                    ponašanje i iskustvo čine ga savršenim vodičem za vašu sledeću avanturu na
+                                    otvorenom.
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center mt-5r">
+                            <div class="title-section text-center " data-animation="fadeInUp"
+                                data-delay="0">
+                                <div class="row">
+                                    <div class="col-sm-12" id="booking-title">
+                                        <h2>Rezervacija</h2>
+                                        <hr>
+                                    </div>
+                                </div> <!-- End row -->
+                            </div> <!-- end title-section -->
+                            <div class="form-wrapper">
+                                <div class="row">
+                                    <div class="col-md-8 col-md-offset-2">
+
+                                        <!-- form fields -->
+                                        <form name="contactform" id="contactform" class=""
+                                            data-animation="fadeInUp" data-delay="0">
+
+                                            <fieldset>
+                                                <div class="form-group col-sm-6">
+                                                    <input class="form-control br-b" type="text" name="name" id="name"
+                                                        placeholder="Ime" required [(ngModel)]='name'
+                                                        [ngModelOptions]="{standalone: true}">
+                                                </div>
+
+                                                <div class="form-group col-sm-6">
+                                                    <input class="form-control br-b" type="text" name="surname"
+                                                        id="surname" placeholder="Prezime" required
+                                                        [(ngModel)]='surname' [ngModelOptions]="{standalone: true}">
+                                                </div>
+
+                                                <div class="form-group col-sm-6">
+                                                    <input class="form-control br-b" type="email" name="email"
+                                                        id="email" placeholder="Mejl" required [(ngModel)]='email'
+                                                        [ngModelOptions]="{standalone: true}">
+                                                </div>
+
+                                                <div class="form-group col-sm-6">
+                                                    <input class="form-control br-b" [(ngModel)]="number"
+                                                        (ngModelChange)="numberOfGuests(number)" type="number"
+                                                        name="number" id="number" min="1" max="90"
+                                                        placeholder="Broj gostiju" required
+                                                        [ngModelOptions]="{standalone: true}">
+                                                </div>
+                                                <div class="form-group col-sm-6">
+                                                    <select class="form-control br-b" id="canyon-select"
+                                                        name="canyon-select" required [(ngModel)]='canyonSelected'
+                                                        [ngModelOptions]="{standalone: true}" [value]="canyonSelected"
+                                                        (ngModelChange)="canyonChange(canyonSelected)">
+                                                        <option value="Nevidio" selected>Nevidio</option>
+                                                        <option value="Drenostica">Drenoštica</option>
+                                                        <option value="Medjurijec">Medjuriječ</option>
+                                                        <option value="Skurda">Škurda</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="form-group col-sm-6">
+                                                    <input class="form-control br-b" type="date" name="date" id="date"
+                                                        style="height: 3em" required [(ngModel)]='date'
+                                                        [ngModelOptions]="{standalone: true}" [attr.min]="today"
+                                                        (ngModelChange)="dateChange()">
+                                                </div>
+                                                <div #guestsForm>
+
+                                                </div>
+                                                <div class="form-group col-sm-12">
+                                                    <textarea class="form-control br-b" name="message" id="message"
+                                                        placeholder="Dodatne napomene... (opciono)"
+                                                        [(ngModel)]='additional'
+                                                        [ngModelOptions]="{standalone: true}"></textarea>
+                                                </div>
+                                            </fieldset>
+
+                                            <div class="title-section text-center "
+                                                data-animation="fadeInUp" data-delay="0" *ngIf="price != -1">
+                                                <div class="row">
+                                                    <div class="col-sm-12" id="booking-title">
+                                                        <h2>Cijena: {{price}}€</h2>
+                                                        <span style="color: grey">*Navedena cijena ne uključuje
+                                                            ručak</span>
+                                                    </div>
+                                                </div> <!-- End row -->
+                                            </div> <!-- end title-section -->
+                                            <!-- submit button -->
+                                            <div class="form-group col-sm-12">
+                                                <input type="submit" name="submit" value="Zakaži avanturu" id="submit"
+                                                    class="btn btn-sm btn-dark" (click)="book()"
+                                                    *ngIf="enabled == true">
+                                            </div>
+                                            <div class="col-md-12 mb-2" *ngIf='message != ""'>
+                                                <div class="form-group" style="white-space: pre-line;">
+                                                    <span class="pb-2" style="color: red">{{message}}</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 mb-2" *ngIf='reserved != ""'>
+                                                <div class="form-group" style="white-space: pre-line;">
+                                                    <span class="pb-2" style="color: green">{{reserved}}</span>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div> <!-- end col-md-8 -->
+                                </div> <!-- end row -->
+                            </div> <!-- end form-wrapper -->
+                        </div>
+                    </div><!--  end container -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End screenshots-section -->
+    <footer>
+        <div id="footer-section" class="text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <ul class="footer-social-links">
+                            <li style="margin: 0 !important"><a href="https://www.instagram.com/trendadventures/"
+                                    target=”_blank”>Instagram</a></li>
+                            <li><a href="mailto: adventurestrend@gmail.com">Email</a></li>
+                        </ul>
+                        <div class="col-sm-12 call">
+                            <img src="../../assets/images/icons/phone.png" alt="">
+                            <a href="tel:38268220057"> +382 68 220 057 </a>
+                        </div>
+                        <p class="copyright">
+                            &copy; 2023 Trend Adventures <br> Created by <a
+                                href="mailto: andrija.rakojevic.8@gmail.com">Andrija Rakojevic</a>
+                        </p>
+                    </div> <!-- End col-sm-8 -->
+                </div> <!-- End row -->
+            </div> <!-- End container -->
+        </div> <!-- End footer-section  -->
+    </footer>
+</main>

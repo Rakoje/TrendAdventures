@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Custom Google fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,300,700' rel='stylesheet' type='text/css'>
+  <link href="http://fonts.googleapis.com/css?family=Crimson+Text:400,600" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- Bootstrap CSS Style -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+  <!-- Template CSS Style -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style-2.css">
+
+  <!-- Animate CSS  -->
+  <link rel="stylesheet" href="assets/css/animate.css">
+
+  <!-- FontAwesome 4.3.0 Icons  -->
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+  <!-- BXslider CSS  -->
+  <link rel="stylesheet" href="assets/css/bxslider/jquery.bxslider.css">
+
+  <!-- Owl Carousel CSS Style -->
+  <link rel="stylesheet" href="assets/css/owl-carousel/owl.carousel.css">
+  <link rel="stylesheet" href="assets/css/owl-carousel/owl.theme.css">
+  <link rel="stylesheet" href="assets/css/owl-carousel/owl.transitions.css">
+
+  <!-- Magnific-Popup CSS Style -->
+  <link rel="stylesheet" href="assets/css/magnific-popup/magnific-popup.css">
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Trend Adventures</title>
+</head>
+
+<body onload="showDiv()" style="background-color: black;">
+  <!-- Preload the Whole Page -->
+  <div id="preloader">
+    <div class="sk-chase">
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+    </div>
+  </div>
+
+
+  <br><br><br>
+  <div class="row">
+    <div class="col-sm-12">
+
+      <video src="assets/videos/canyon-start.mp4" autoplay="true" loop="true" playsinline="true" muted="true"></video>
+
+      <header class="viewport-header-vid test-text">
+        <h1 class="vid-start-title" id="title-vid">
+          Trend
+          <span>Adventures</span>
+        </h1>
+      </header>
+    </div>
+  </div>
+  <app-root></app-root>
+  <!-- JS libraries and scripts -->
+  <script src="assets/js/jquery-1.11.3.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/bootstrap-hover-dropdown.min.js"></script>
+  <script src="assets/js/jquery.appear.min.js"></script>
+  <script src="assets/js/jquery.bxslider.min.js"></script>
+  <script src="assets/js/jquery.owl.carousel.min.js"></script>
+  <script src="assets/js/jquery.countTo.js"></script>
+  <script src="assets/js/jquery.easing.1.3.js"></script>
+  <script src="assets/js/jquery.imagesloaded.min.js"></script>
+  <script src="assets/js/jquery.isotope.js"></script>
+  <script src="assets/js/jquery.placeholder.js"></script>
+  <script src="assets/js/jquery.smoothscroll.js"></script>
+  <script src="assets/js/jquery.stellar.min.js"></script>
+  <script src="assets/js/jquery.waypoints.js"></script>
+  <script src="assets/js/jquery.fitvids.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+  <script src="assets/js/jquery.countdown.js"></script>
+  <script src="assets/js/jquery.navbar-scroll.js"></script>
+  <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  <script src="assets/js/jquery.gmaps.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    var lang = 'eng';
+    function showDiv() {
+      setTimeout(function () {
+        document.getElementById('title-vid').style.visibility = "visible";
+      }, 1500);
+      setTimeout(function () {
+        document.getElementById('main-text-home').style.visibility = "visible";
+      }, 2100);
+    }
+    function eng() {
+      lang = 'eng';
+    }
+    function mne() {
+      lang = 'mne';
+    }
+  </script>
+
+</body>
+
+</html>

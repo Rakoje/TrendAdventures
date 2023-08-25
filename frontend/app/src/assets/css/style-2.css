@@ -1,0 +1,84 @@
+.viewport-header-vid {
+  position: relative;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.vid-start-title {
+  font-family: "Syncopate", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3vw;
+  line-height: 1.2;
+  font-size: 6vw;
+  text-align: center;
+  padding-top: 3rem;
+  visibility: hidden;
+}
+
+.vid-start-title span {
+  display: block;
+  font-size: 12vw;
+  letter-spacing: -1.3vw;
+}
+
+main {
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  position: relative;
+  padding: 1rem;
+  visibility: hidden;
+  transition: visibility 1 ease-in;
+  margin-top: 12rem;
+  width: 80%;
+}
+
+main p {
+  max-width: 400px;
+  margin: 1rem auto;
+}
+
+.test-text {
+  text-shadow: 0 0 3px #000;
+}
+
+.mt-5r{
+  margin-top: 5rem;
+}
+
+.img-with-text {
+  text-align: justify;
+  width: 48px;
+}
+
+.img-with-text img {
+  display: block;
+  margin: 0 auto;
+}
+
+.lang-img{
+  width:25px; 
+  height:25px; 
+  border-radius: 50%; 
+  object-fit: cover;
+  margin-right: 50px;
+  border: black solid;
+  cursor: pointer;
+}
+
+
+.lang-img:hover{
+  opacity: 0.7
+}
